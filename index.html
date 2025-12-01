@@ -1,140 +1,418 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>João Roberto • iOS Developer & Product</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;900&display=swap" rel="stylesheet">
+
+<head prefix="og: http://ogp.me/ns#">
+    <title>João Roberto | iOS Developer & Product</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="João Roberto" />
+    <meta name="description" content="Desenvolvedor iOS, Swift, SwiftUI, UIKit, visionOS e Product." />
+    <meta property="og:description" content="Desenvolvedor iOS, Swift, SwiftUI, UIKit, visionOS e Product." />
+    <meta prefix="og: http://ogp.me/ns#" property="og:image" content="img/memoji.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:title" content="João Roberto Portfolio" />
+    <meta property="og:type" content="website" />
+
+    <link rel="shortcut icon" href="img/memoji.png">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,900,900italic,700italic'>
+    <link rel="stylesheet" type="text/css" href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100'>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
 
-<body>
+<body id="page-top" data-spy="scroll" data-target=".navbar-custom" data-offset="100">
+    <div id="content">
 
-<!-- NAVBAR -->
-<nav class="navbar">
-    <div class="logo">João Roberto</div>
+        <!-- Navigation -->
+        <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header page-scroll"></div>
 
-    <ul class="nav-links">
-        <li><a href="#home">Início</a></li>
-        <li><a href="#projects">Projetos</a></li>
-        <li><a href="#experience">Experiência</a></li>
-        <li><a href="#contact">Contato</a></li>
-    </ul>
-</nav>
+                <div class="collapse navbar-collapse navbar-main-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="hidden"><a class="page-scroll" href="#page-top"></a></li>
+                        <li><a class="page-scroll" href="#about">Sobre</a></li>
+                        <li><a class="page-scroll" href="#services">Paixão</a></li>
+                        <li><a class="page-scroll" href="#experience">Experiência</a></li>
+                        <li><a class="page-scroll" href="#portfolio">Projetos</a></li>
+                        <li><a class="page-scroll" href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-<!-- HERO -->
-<section id="home" class="hero">
-    <img src="assets/avatar.png" class="avatar" />
+        <!-- Section: Introduction -->
+        <section id="intro" class="intro text-center">
+            <div class="overlay">
+                <div class="intro-content">
+                    <h1 class="animated fadeInDown delay-05s">Olá, eu sou o João Roberto</h1>
+                    <p class="subtitle animated fadeInUp delay-05s">iOS Developer • Swift • SwiftUI • Product</p>
+                    <a class="fa fa-angle-down page-scroll" href="#about"></a>
+                </div>
+            </div>
+        </section>
 
-    <h1>Eu crio apps<br>e transformo ideias <span class="gradient">em impacto real</span>.</h1>
+        <!-- Section: About -->
+        <section id="about" class="text-center">
+            <div class="overlay">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2 wp1">
 
-    <p class="subtitle">
-        Desenvolvedor iOS e entusiasta de Product no Apple Developer Academy | IFCE.<br>
-        Movido por criatividade, aprendizado baseado em desafios e a busca por impacto real.
-    </p>
+                            <h2>Um Pouco Sobre Mim</h2>
 
-    <div class="hero-buttons">
-        <a href="#contact" class="btn">Entrar em contato</a>
-        <a href="assets/cv.pdf" class="btn outline">Baixar CV</a>
-    </div>
+                            <img src="img/memoji.png" id="prof-pic" />
 
-    <h3 class="exp-title">ESPECIALISTA EM</h3>
+                            <p>
+                                Sou João Roberto, apaixonado por desenvolvimento iOS, criação de produtos,
+                                experiências digitais e aprendizado baseado em desafios. Estudo Engenharia de Computação
+                                no <a href="https://portal.ifce.edu.br/campus/fortaleza/" target="_blank">IFCE Fortaleza</a>
+                                e faço parte da <a href="https://developeracademy.ifce.edu.br" target="_blank">Apple Developer Academy</a>,
+                                onde desenvolvo soluções para iOS, macOS, watchOS, iPadOS e visionOS.
 
-    <div class="tech-icons">
-        <img src="assets/swift.png">
-        <img src="assets/swiftui.png">
-        <img src="assets/uikit.png">
-        <img src="assets/xcode.png">
-        <img src="assets/apple.png">
-    </div>
-</section>
+                                <br><br>
+                                Gosto de unir tecnologia, criatividade e propósito — criando apps que resolvem problemas reais e geram impacto.
+                                Também atuo com UX, design de interfaces, multimídia, jogos e aprendizado rápido através de prototipação.
+                            </p>
+                        </div>
+                    </div>
 
-<!-- PROJECTS -->
-<section id="projects" class="projects">
-    <h2>PROJETOS</h2>
+                    <div class="row text-center">
+                        <div id="tl-dr">
+                            <h3> Auto proclamações:</h3>
 
-    <div class="project-grid">
+                            <div class="tldr-proc">
+                                <div class="tldr-icon"><i class="fa fa-apple"></i></div>
+                                <h5>iOS Developer</h5>
+                            </div>
 
-        <div class="project-card">
-            <img src="assets/visulibras.jpg" class="project-img">
-            <div class="project-info">
-                <p>Aplicativo educativo • visionOS + iOS</p>
-                <h3>VisuLibras</h3>
-                <p>Experiências multimodais usando realidade aumentada e narrativa visual para ensinar LIBRAS.</p>
+                            <div class="tldr-proc">
+                                <div class="tldr-icon"><i class="fa fa-lightbulb-o"></i></div>
+                                <h5>Product / UX</h5>
+                            </div>
+
+                            <div class="tldr-proc">
+                                <div class="tldr-icon"><i class="fa fa-rocket"></i></div>
+                                <h5>VisionOS Explorer</h5>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Services -->
+        <section id="services" class="text-center">
+            <div class="container">
+                <h2>O Que Eu Faço</h2>
+                <div class="spacer-10"></div>
+
+                <div class="col-md-4 wp2">
+                    <div class="icon"><i class="fa fa-mobile"></i></div>
+                    <h3>iOS Development</h3>
+                    <p>Desenvolvimento para o ecossistema Apple usando Swift, SwiftUI, UIKit, visionOS e melhores práticas de engenharia.</p>
+                </div>
+
+                <div class="col-md-4 wp2 delay-025s">
+                    <div class="icon"><i class="fa fa-pencil"></i></div>
+                    <h3>Design & Experiência</h3>
+                    <p>Criação de interfaces intuitivas e acessíveis, com foco em UX, narrativa, protótipos e fluidez de uso.</p>
+                </div>
+
+                <div class="col-md-4 wp2 delay-05s">
+                    <div class="icon"><i class="fa fa-cubes"></i></div>
+                    <h3>Produto & Impacto</h3>
+                    <p>Unindo criatividade, pesquisa e colaboração para transformar ideias em produtos reais, funcionais e escaláveis.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Section: Experience -->
+        <section id="experience">
+            <div class="container">
+
+                <div class="text-center wp3">
+                    <h2>EXPERIÊNCIA</h2>
+                    <p>Atuo com desenvolvimento, UX e produto no ecossistema Apple.</p>
+                </div>
+
+                <div class="col-sm-offset-1 col-xs-12 col-sm-6 col-md-6 skills-section wp3">
+                    <h3>TECNOLOGIAS:</h3>
+                    <div class="row">
+
+                        <div class="col-xs-3 skill-icon"><img class="img-responsive" src="img/skills/swift.png"></div>
+                        <div class="col-xs-3 skill-icon"><img class="img-responsive" src="img/skills/swiftui.png"></div>
+                        <div class="col-xs-3 skill-icon"><img class="img-responsive" src="img/skills/uikit.png"></div>
+                        <div class="col-xs-3 skill-icon"><img class="img-responsive" src="img/skills/visionos.png"></div>
+                        <div class="col-xs-3 skill-icon"><img class="img-responsive" src="img/skills/coreml.png"></div>
+                        <div class="col-xs-3 skill-icon"><img class="img-responsive" src="img/skills/xcode.jpeg"></div>
+                        <div class="col-xs-3 skill-icon"><img class="img-responsive" src="img/skills/github.png"></div>
+                        <div class="col-xs-3 skill-icon"><img class="img-responsive" src="img/skills/figma.png"></div>
+
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-offset-1 col-sm-4 col-md-offset-1 col-md-3 employment wp3">
+                    <div class="text-center places-worked-center">
+                        <h3>ONDE ATUEI:</h3>
+
+                        <a href="https://developeracademy.ifce.edu.br" target="_blank">
+                            <img id="mullen-logo" src="img/academy.png" alt="academy" />
+                        </a>
+
+                        <a href="https://cocoaheads.org/" target="_blank">
+                            <img id="mullen-logo" src="img/cocoaheads.png" alt="cocoaheads" />
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Section: Portfolio -->
+        <section id="portfolio">
+            <div class="container">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">PROJETOS</h2>
+                </div>
+
+                <div class="row portfolio-row">
+
+                    <!-- Groovefy -->
+                    <div class="portfolio-item-wrapper wp5">
+                        <div class="portfolio-item" data-toggle="modal" href="#groovefyModal">
+                            <div class="portfolio-overlay"></div>
+                            <img src="img/groovefy.jpg" alt="Groovefy">
+                            <div class="portfolio-info">
+                                <h3>Groovefy</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Baba Yaga -->
+                    <div class="portfolio-item-wrapper wp5">
+                        <div class="portfolio-item" data-toggle="modal" href="#babayagaModal">
+                            <div class="portfolio-overlay"></div>
+                            <img src="img/babayaga.jpg" alt="Baba Yaga">
+                            <div class="portfolio-info">
+                                <h3>Os Mistérios de Baba Yaga</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Catch It -->
+                    <div class="portfolio-item-wrapper wp5">
+                        <div class="portfolio-item" data-toggle="modal" href="#catchitModal">
+                            <div class="portfolio-overlay"></div>
+                            <img src="img/catchit.jpg" alt="Catch It">
+                            <div class="portfolio-info">
+                                <h3>Catch It!</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CosmosVerse -->
+                    <div class="portfolio-item-wrapper wp5">
+                        <div class="portfolio-item" data-toggle="modal" href="#cosmosModal">
+                            <div class="portfolio-overlay"></div>
+                            <img src="img/cosmosverse.jpg" alt="CosmosVerse">
+                            <div class="portfolio-info">
+                                <h3>CosmosVerse</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dewiser -->
+                    <div class="portfolio-item-wrapper wp5">
+                        <div class="portfolio-item" data-toggle="modal" href="#dewiserModal">
+                            <div class="portfolio-overlay"></div>
+                            <img src="img/dewiser.jpg" alt="Dewiser">
+                            <div class="portfolio-info">
+                                <h3>Dewiser</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- BeHealthy -->
+                    <div class="portfolio-item-wrapper wp5">
+                        <div class="portfolio-item" data-toggle="modal" href="#behealthyModal">
+                            <div class="portfolio-overlay"></div>
+                            <img src="img/behealthy.jpg" alt="BeHealthy">
+                            <div class="portfolio-info">
+                                <h3>BeHealthy</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECT MODALS -->
+        <!-- Groovefy Modal -->
+        <div class="modal fade" id="groovefyModal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Groovefy</h4>
+                        <h6 class="modal-title-description">Soundtrack Maker Inteligente</h6>
+                    </div>
+                    <div class="modal-body">
+                        <img class="img-responsive img-centered" src="img/groovefy.jpg" alt="">
+                        <p class="modal-description">
+                            Groovefy usa IA para entender seu humor, estilo e atividades, criando playlists personalizadas conectadas ao Apple Music.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="project-card">
-            <img src="assets/groovefy.jpg" class="project-img">
-            <div class="project-info">
-                <p>Produto digital • Apple Music + Spotify API</p>
-                <h3>Groovefy</h3>
-                <p>Gerador inteligente de playlists usando IA e análise contextual.</p>
+        <!-- Baba Yaga Modal -->
+        <div class="modal fade" id="babayagaModal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Os Mistérios de Baba Yaga</h4>
+                        <h6 class="modal-title-description">Jogo • SpriteKit</h6>
+                    </div>
+                    <div class="modal-body">
+                        <img class="img-responsive img-centered" src="img/babayaga.jpg" alt="">
+                        <p class="modal-description">
+                            Explore uma floresta encantada, colete ingredientes mágicos, evite inimigos e realize manobras orbitais neste jogo narrativo e estratégico.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="project-card">
-            <img src="assets/handsuite.jpg" class="project-img">
-            <div class="project-info">
-                <p>visionOS • Interaction toolkit</p>
-                <h3>HandSuite</h3>
-                <p>Framework de gestos para Vision Pro com HUD interativo e ferramentas de debug.</p>
+        <!-- Catch It Modal -->
+        <div class="modal fade" id="catchitModal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Catch It!</h4>
+                        <h6 class="modal-title-description">Identificação de Animais com IA</h6>
+                    </div>
+                    <div class="modal-body">
+                        <img class="img-responsive img-centered" src="img/catchit.jpg" alt="">
+                        <p class="modal-description">
+                            Identifique animais em tempo real usando CoreML e registre suas descobertas em um catálogo pessoal.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
 
-    </div>
-</section>
-
-<!-- EXPERIENCE -->
-<section id="experience" class="experience">
-    <h2>EXPERIÊNCIA</h2>
-
-    <div class="exp-item">
-        <div class="exp-header">
-            <h3>Apple Developer Academy | IFCE — Desenvolvedor iOS & Product Manager Jr</h3>
-            <span>2024 – Presente</span>
+        <!-- Cosmos Modal -->
+        <div class="modal fade" id="cosmosModal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">CosmosVerse</h4>
+                        <h6 class="modal-title-description">Experiência Imersiva para visionOS</h6>
+                    </div>
+                    <div class="modal-body">
+                        <img class="img-responsive img-centered" src="img/cosmosverse.jpg" alt="">
+                        <p class="modal-description">
+                            Viaje por planetas, estações e ambientes espaciais interativos no Vision Pro.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <p>
-            Desenvolvimento para iOS, macOS, visionOS, watchOS e iPadOS usando Swift, SwiftUI, UIKit e SwiftData.
-            Atuação em UX/UI, pesquisa com CBL, multimídia, jogos, acessibilidade e publicação na App Store. 
-        </p>
-    </div>
 
-    <div class="exp-item">
-        <div class="exp-header">
-            <h3>Monitor de Desenvolvimento iOS — Apple Developer Academy</h3>
-            <span>2025</span>
+        <!-- Dewiser Modal -->
+        <div class="modal fade" id="dewiserModal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Dewiser</h4>
+                        <h6 class="modal-title-description">Tomada de Decisão Simplificada</h6>
+                    </div>
+                    <div class="modal-body">
+                        <img class="img-responsive img-centered" src="img/dewiser.jpg" alt="">
+                        <p class="modal-description">
+                            Compare opções, visualize cenários e tome decisões com clareza usando uma interface simples e elegante.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <p>
-            Auxílio técnico para novos alunos, revisão de código, suporte em arquitetura e escalabilidade e facilitação de aprendizagem.
-        </p>
-    </div>
 
-    <div class="exp-item">
-        <div class="exp-header">
-            <h3>CocoaHeads Fortaleza — Diretor de Comunicação & RP</h3>
-            <span>2024 – Presente</span>
+        <!-- BeHealthy Modal -->
+        <div class="modal fade" id="behealthyModal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">BeHealthy</h4>
+                        <h6 class="modal-title-description">Rede Social de Bem-Estar</h6>
+                    </div>
+                    <div class="modal-body">
+                        <img class="img-responsive img-centered" src="img/behealthy.jpg" alt="">
+                        <p class="modal-description">
+                            Compartilhe receitas, rotinas e conquistas em um espaço social focado em saúde, nutrição e bem-estar.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <p>
-            Organização do capítulo local, gestão de palestrantes e cronogramas, estratégia de comunidade e comunicação profissional.
-        </p>
+
+        <!-- Section: Contact -->
+        <section id="contact">
+            <div class="container text-center">
+                <div class="email-icon"><i class="fa fa-paper-plane-o wp6"></i></div>
+                <h2>ENTRE EM CONTATO!</h2>
+                <p>Vamos conversar sobre apps, UX, IA, comunidades ou qualquer ideia que você queira tirar do papel.</p>
+                <p><strong>Email:</strong> joaorobertocode@gmail.com</p>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container text-center">
+
+                <ul class="list-inline social-buttons animated fadeIn">
+                    <li><a id="instagram" href="https://instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                    <li><a id="github" href="https://github.com/joaorbrto" target="_blank"><i class="fa fa-github"></i></a></li>
+                    <li><a id="linkedin" href="https://linkedin.com/in/joaorbrto" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+
+                <div class="page-scroll">
+                    <a id="to-top" class="page-scroll" href="#page-top">
+                        <img id="rocket" src="img/rocket12.png" />
+                    </a>
+                    <p id="to-top-copy">Subindo!</p>
+                </div>
+
+                <div class="copyright">
+                    <p><i class="fa fa-copyright"></i> João Roberto</p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+        <script src="js/jquery.easing.1.3.js"></script>
+        <script src="js/jquery.scrollTo.min.js"></script>
+        <script src="js/scrolling-nav.js"></script>
+        <script src="js/jquery.waypoints.min.js"></script>
+        <script src="js/modernizr.js"></script>
+        <script src="js/custom.js"></script>
+
     </div>
-
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="contact">
-    <h2>Contato</h2>
-    <p>Fique à vontade para falar sobre apps, inovação, UX, IA ou qualquer ideia maluca que você queira tirar do papel.</p>
-
-    <p class="email">joaorobertocode@gmail.com</p>
-
-    <div class="socials">
-        <a href="https://www.linkedin.com/in/joaorbrto">🔗 LinkedIn</a>
-        <a href="mailto:joaorobertocode@gmail.com">📧 Email</a>
-        <a href="https://github.com/joaorbrto">💻 GitHub</a>
-    </div>
-</section>
-
 </body>
 </html>
